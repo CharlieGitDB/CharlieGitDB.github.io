@@ -147,7 +147,7 @@ a:active {
   cursor: pointer;
   padding: 0px 5px 4px 5px;
 }
-.arrow:hover {
+.the-arrow:hover {
   background: black;
   color: white;
 }
