@@ -137,12 +137,12 @@ a:active {
 .slide a:active {
   color: #547A82;
 }
-.to-top {
+.jump-to-top {
   position: absolute;
   right: -20px;
   bottom: 11px;
 }
-.arrow {
+.the-arrow {
   background: white;
   cursor: pointer;
   padding: 0px 5px 4px 5px;

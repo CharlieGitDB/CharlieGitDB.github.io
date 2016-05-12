@@ -49,7 +49,7 @@ window.onload = function(){
   });
 
   //when up arrow button is clicked
-  C('.to-top').clickListen(function(){
-    C('.to-top').scrollTop(0,0);
+  C('.jump-to-top').clickListen(function(){
+    C('.jump-to-top').scrollTop(0,0);
   });
 };
