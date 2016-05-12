@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charlie's Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <script src="js/char.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="header">
+    <span class="header-title">Hi, I'm Charlie</span>
+    <div class="nav-hold">
+      <div class="nav-email nav-menu">Email</div><div class="nav-github nav-menu">GitHub</div>
+    </div>
+  </div>
+  <div class="content">
+    <h2>Intro</h2>
+    <p>
+       Im a software developer that really enjoys creating various desktop, web and mobile applications.  From this site you can see a run down/explaination of all of the stuff I am working on currently without having to look through all of my pages of GitHub code (<i>unless you want to, of course</i> ).  Most of the projects I put on here should be either finished (<i>enough to test out</i> ) or very close.
+    </p>
+    <h2>Projects</h2>
+    <div class="box-holder">
+      <img id="spinner" src="img/spin.gif"/>
+    </div>
+  </div>
+
+  <!-- Slides -->
+  <div class="slide" id="slide0">
+    <div class="float-exit"><div class="exit-btn">X</div></div>
+    <h1>ChangeDJ - Web Application</h1>
+    <h2>What is ChangeDJ?</h2>
+    <p>
+      ChangeDJ unfortunately for me isn't a brand new idea.  In fact many sites have come and gone with the same concept as my ChangeDJ.  Some examples of these would be <s>Plug.dj</s>, <s>TurnTable</s>, <a href="https://www.dubtrack.fm/" target="_blank">Dubtrack.fm</a>.  Essentially ChangeDJ is a modern day Jukebox that lives on the web.  Users make playlists from searching for songs using <a href="https://www.youtube.com" target="_blank">YouTube</a>'s search API.  They then join the DJ Queue, which is like putting the quarter in the Jukebox.  It moves from one users song to the other going down a list.  A user never has one of their own songs played twice in a row, unless there is no one else in the queue.
+    </p>
+    <h2>What makes ChangeDJ different?</h2>
+    <p>
+      I created ChangeDJ with one thing in mind, <b>simplicity</b>. I felt that other websites that were doing the same thing over-complicated their web app's.  Many of the old ones that are now defunct added far too many gimmicks. Some had avatars that you could create that would dance to your song.  Others had a points based system, that would reward frequent users and penalize new users. It was all too much in my opinion.  Most users that use this type of web app aren't even looking at the actual web app very often.  They are usually browsing other websites and keeping the app's tab open, playing music.  Meaning that avatars, and point systems etc. are over doing something that should be simple.
+    </p><br>
+    <p>
+     ChangeDJ consists of just five elements:
+     <ol>
+       <li>The first element is a simple websocket chatroom, so users can interact if they feel like it.</li>
+       <li>The second element is a view of all the songs they have added to their playlist.</li>
+       <li>The third is a view to search for songs to add to their playlist.</li>
+       <li>The fourth is the video area that shows the music video of the song the DJ queue is playing.</li>
+       <li>The fifth is a button to join the DJ queue, so they can start playing their own music.</li>
+     </ol>
+      Simple, right?
+    </p>
+    <h2>Preview of ChangeDJ</h2>
+    <p>
+      <a href="https://github.com/CharlieGitDB/changeDJ_SQL" target="_blank"><button>View on GitHub</button></a><br><br>
+      <i class="condensed">*The application's preview has been heavily condensed to fit on this webpage in .gif format</i><br>
+      <img src="img/changedjfullx.gif" class="lg-view-img"/><a href="img/changedjfullx.gif" target="_blank" class="small-view-link">View .GIF preview of this application.</a><br>
+    </p>
+    <div class="to-top">
+      <div class="arrow">&#8593;</div>
+    </div>
+  </div>
+
+  <div class="slide" id="slide1">
+    <div class="float-exit"><div class="exit-btn">X</div></div>
+    <h1>ReactJS Chat - Web Application</h1>
+    <h2>What is ReactJS Chat?</h2>
+    <p>
+      ReactJS Chat is a simple project that I felt like making as I learn the <a href="https://facebook.github.io/react/" target="_blank">React</a> framework created by the Facebook team.  I decided that since this was my first time using this framework I wanted to create something that was simple enough, but also let me test out some of the things that makes React great.  Since React is really good with handling frequently changing applications I figured a chat room that always has messages being input into it would be a great way to see the performance improvements of React.
+    </p>
+    <br>
+    <p>
+      I wanted to finished this project in a few hours of coming up with the idea.  So to make that happen I used Node.js for the server, Bootstrap CSS for the aesthetic of the chat, and of course React for the client-side logic.  I didn't feel that implementing a database for this project was necessary because I don't plan on anyone actually using this application.
+    </p>
+    <h2>Preview of ReactJS Chat</h2>
+    <p>
+      <a href="https://github.com/CharlieGitDB/ReactJS_Websocket_Chat" target="_blank"><button>View on GitHub</button></a><br><br>
+
+      <i class="condensed">*This application's preview has been heavily condensed to fit on this webpage in .gif format</i>
+      <img src="img/reactjschat.gif" class="lg-view-img"/><a href="img/reactjschat.gif" class="small-view-link" target="_blank">View .GIF preview of this application.</a><br>
+      <a href="https://calm-dusk-17724.herokuapp.com/" target="_blank"><button>Try ReactJS Chat</button></a><br>
+      <b>You will want to open two tabs, or have a friend try the chat with you on another computer to see the full effect.</b><br>
+    </p>
+    <div class="to-top">
+      <div class="arrow">&#8593;</div>
+    </div>
+  </div>
+
+  <div class="slide" id="slide2">
+    <div class="float-exit"><div class="exit-btn">X</div></div>
+    <h1>CreateSkeleton - Desktop Application</h1>
+    <h2>What is CreateSkeleton?</h2>
+    <p>
+      If you have never made a <a href="https://nodejs.org/">Node.js</a> application, and you never plan on making one, then this desktop application will not be for you.  If you have however or do plan on starting make Node.js applications then this application is definitely a useful tool to have.  Setting up a full stack Node app is tedious.  It takes tooling with npm, setting up possibly 10+ directories, setting up many base files, writing up your Node.js server and more.
+    </p>
+    <br>
+    <p>
+      One day I decided for a week I wanted to do a Node project a day to show on my GitHub. By the third day I was so annoyed by how much of each day was spent just setting up a base project.  So I decided that I would create a better way to get a Node.js project on its feet.  That's when I developed CreateSkeleton.  Instead of going through the usual start up hassle, all you have to do to get your project started is decide where you want your base project directory to go.  In the preview below you can see with CreateSkeleton it only takes <b>seconds</b> now to get a base Node.js Applicaton.
+    </p>
+
+    <h2>Preview of CreateSkeleton</h2>
+    <p>
+      <a href="https://github.com/CharlieGitDB/Create_Walking_Skeleton" target="_blank"><button>View on GitHub</button></a><br><br>
+      <i class="condensed">*This application's preview has been heavily condensed to fit on this webpage in .gif format</i>
+      <img src="img/createskeleton.gif" class="lg-view-img"/><a href="img/createskeleton.gif" class="small-view-link" target="_blank">View .GIF preview of this application.</a><br><br>
+      If you use Microsoft Windows to create your Node.js apps you can download the production version of CreateSkeleton by clicking the download button below:<br>
+      <a href="https://www.dropbox.com/s/9zysz6y9felvld1/CreateSkeletonInstaller.exe?dl=0" target="_blank"><button>Download</button></a>
+    <div class="to-top">
+      <div class="arrow">&#8593;</div>
+    </div>
+  </div>
+
+  <div class="slide" id="slide3">
+    <div class="float-exit"><div class="exit-btn">X</div></div>
+    <h1>YT Sync - Browser Extension</h1>
+    <h2>What is YT Sync?</h2>
+    <p>
+      YT Sync is my most under construction project currently.  It is a bit of a silly project, but I could see some people using it.  YT Sync is a <a href="https://chrome.google.com/webstore/category/extensions" target="_blank">Google Chrome Browser Extension</a>.  For those that are unsure of what a browser extension is, ill give a quick explaination the best I can.  A browser extension is an addon to your exisiting browser.  It allows developers to make changes to your browser to make things easier, or add more functionality to already made websites.  The most popular browser extension is a utility that blocks invasive advertisments.  My browser extension YT Sync allows you and a friend anywhere in the world to watch a Youtube video together in perfect synchronization.
+    </p>
+    <br>
+    <p>
+      Like I said earlier it's a bit silly but it could have some nice use cases.  I think that if you wanted to listen to a playlist of music with a friend this would work great for that.  If you wanted to watch a really long Youtube video with a friend this is a great tool for that.  I'm sure there are even use cases for it I haven't even thought of yet.
+    </p>
+    <h2>Preview of CreateSkeleton</h2>
+    <p>
+      <a href="https://github.com/CharlieGitDB/YT_Sync" target="_blank"><button>View on GitHub</button></a><br><br>
+      <i class="condensed">*This application's preview has been heavily condensed to fit on this webpage in .gif format</i>
+      <img src="img/ytsync.gif" class="lg-view-img"/><a href="img/ytsync.gif" class="small-view-link" target="_blank">View .GIF preview of this application.</a><br>
+    </p>
+    <div class="to-top">
+      <div class="arrow">&#8593;</div>
+    </div>
+  </div>
+</body>
+</html>
