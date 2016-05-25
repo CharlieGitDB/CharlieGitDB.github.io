@@ -114,6 +114,9 @@ a:active {
 .slide button:active {
   box-shadow: inset 0 0px 0px;
 }
+.slide button:focus {
+  outline: none;
+}
 .float-exit {
   float: right;
   margin-top: 11px;

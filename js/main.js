@@ -14,11 +14,22 @@ var projectIcons = [
   {
     title: 'YT Sync',
     img: './img/yt.png'
+  },
+  {
+    title: 'BookCrypt',
+    img: './img/key.png'
   }
 ];
 
 
 window.onload = function(){
+  var url = window.location.href;
+  var winId = url.substr(url.length - 1);
+  if(winId != '/'){
+    C('#slide'+winId).show().scrollTop(0,0);
+    C('.content').hide();
+  }
+
   //hide spinner once page is loaded
   C('#spinner').hide();
 
@@ -39,6 +50,7 @@ window.onload = function(){
   C('.exit-btn').clickListen(function(){
     C('.slide').hide();
     C('.content').show();
+    window.history.pushState('', '', '/');
   });
 
   //when project icon is clicked
@@ -46,10 +58,23 @@ window.onload = function(){
     var id = this.getAttribute('id').slice(-1);
     C('#slide'+id).show().scrollTop(0,0);
     C('.content').hide();
+    window.history.pushState('', '', '?'+id);
   });
 
   //when up arrow button is clicked
   C('.jump-to-top').clickListen(function(){
     C('.jump-to-top').scrollTop(0,0);
   });
+
+  window.onpopstate = function(){
+    var winUrl = window.location.href;
+    var windowId = winUrl.substr(winUrl.length - 1);
+    if(windowId != '/'){
+      C('#slide'+windowId).show().scrollTop(0,0);
+      C('.content').hide();
+    }else{
+      C('.slide').hide();
+      C('.content').show();
+    }
+  }
 };
