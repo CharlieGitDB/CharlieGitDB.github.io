@@ -58,7 +58,7 @@ window.onload = function(){
     var id = this.getAttribute('id').slice(-1);
     C('#slide'+id).show().scrollTop(0,0);
     C('.content').hide();
-    window.history.pushState('', '', '?'+id);
+    window.history.pushState('', '', '#'+id);
   });
 
   //when up arrow button is clicked
