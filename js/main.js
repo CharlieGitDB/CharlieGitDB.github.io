@@ -46,6 +46,10 @@ window.onload = function(){
     window.open('https://github.com/CharlieGitDB', '_blank');
   });
 
+  C('.nav-codepen').clickListen(function(){
+    window.open('http://codepen.io/charlie-/', '_blank');
+  });
+
   //when a slide's exit button is clicked hide the current slide
   C('.exit-btn').clickListen(function(){
     C('.slide').hide();
